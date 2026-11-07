@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpsFinance Studio — Herramientas Financieras y Plantillas para Autónomos en España</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-40 backdrop-blur-md bg-slate-900/80 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-brand-600 to-cyan-400 flex items-center justify-center shadow-lg shadow-brand-500/20 font-mono font-bold text-lg text-white">
+          Ω
+        </div>
+        <div>
+          <span class="font-bold text-lg tracking-tight text-white">OpsFinance</span>
+          <span class="text-xs ml-1.5 px-2 py-0.5 rounded-full bg-slate-800 text-brand-400 font-medium border border-slate-700">Studio</span>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="#features" class="hover:text-white transition-colors">Características</a>
+        <a href="#interactive-demo" class="hover:text-white transition-colors">Simulador En Vivo</a>
+        <a href="#pricing" class="hover:text-white transition-colors">Catálogo y Precios</a>
+        <a href="#faq" class="hover:text-white transition-colors">Preguntas Frecuentes</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <a href="#pricing" class="px-4 py-2 text-sm font-semibold rounded-lg bg-brand-600 hover:bg-brand-500 text-white shadow-md shadow-brand-600/30 transition-all hover:scale-[1.02] active:scale-[0.98]">
+          Obtener Suite
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-20 pb-28 overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-900/30 via-slate-900 to-slate-900 pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-xs font-medium text-brand-300 mb-8 shadow-sm">
+        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span>Adaptado a los tramos de cotización RETA e IRPF de España</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-[1.15]">
+        Calcula tu tarifa profesional y controla tu <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-cyan-300 to-teal-300">rendimiento neto real</span> en España.
+      </h1>
+      <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto font-normal leading-relaxed">
+        Plantillas operativas de grado profesional para Excel y Google Sheets. Diseñadas bajo marcos de Project Management para calcular tarifas horarias, retenciones de IRPF y cuotas de autónomo sin errores fiscales.
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#pricing" class="w-full sm:w-auto px-8 py-3.5 text-base font-bold rounded-xl bg-gradient-to-r from-brand-600 to-cyan-600 hover:from-brand-500 hover:to-cyan-500 text-white shadow-lg shadow-brand-600/25 transition-all hover:scale-105">
+          Descargar la Suite Completa — 59 €
+        </a>
+        <a href="#interactive-demo" class="w-full sm:w-auto px-8 py-3.5 text-base font-semibold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-colors">
+          Probar Simulador Interactivo ↓
+        </a>
+      </div>
+      <div class="mt-12 flex items-center justify-center gap-8 text-xs text-slate-400 font-medium">
+        <div class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          Descarga Inmediata (.xlsx y Google Sheets)
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          Fórmulas Auditadas y Desbloqueadas
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          Garantía de Actualización Fiscal
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Live Calculator Demo -->
+  <section id="interactive-demo" class="py-20 bg-slate-950/60 border-y border-slate-800 relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold tracking-tight text-white">Demostración en Vivo: Simula tu Facturación</h2>
+        <p class="mt-3 text-slate-400 text-sm max-w-xl mx-auto">
+          Comprueba de forma instantánea el funcionamiento del motor de cálculo que incorporan nuestras hojas de trabajo descargables.
+        </p>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Inputs Column -->
+          <div class="lg:col-span-6 space-y-6">
+            <div>
+              <div class="flex justify-between text-sm font-semibold mb-2">
+                <label for="input-billing" class="text-slate-200">Facturación Anual Estimada (sin IVA)</label>
+                <span id="display-billing" class="text-brand-400 font-mono font-bold">48.000 €</span>
+              </div>
+              <input type="range" id="input-billing" min="15000" max="120000" step="1000" value="48000" 
+                class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-brand-500">
+            </div>
+
+            <div>
+              <div class="flex justify-between text-sm font-semibold mb-2">
+                <label for="input-expenses" class="text-slate-200">Gastos Deducibles Anuales</label>
+                <span id="display-expenses" class="text-slate-300 font-mono">6.000 €</span>
+              </div>
+              <input type="range" id="input-expenses" min="1000" max="30000" step="500" value="6000" 
+                class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-brand-500">
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 pt-2">
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1.5">Régimen RETA</label>
+                <select id="select-regime" class="w-full bg-slate-800 border border-slate-700 rounded-lg py-2 px-3 text-sm text-slate-200 focus:outline-none focus:border-brand-500 font-medium">
+                  <option value="tarifa_plana">Tarifa Plana (88,56 €/m)</option>
+                  <option value="general" selected>Tramos Reales (General)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1.5">Retención Facturas B2B</label>
+                <select id="select-retention" class="w-full bg-slate-800 border border-slate-700 rounded-lg py-2 px-3 text-sm text-slate-200 focus:outline-none focus:border-brand-500 font-medium">
+                  <option value="0.15" selected>15% (General)</option>
+                  <option value="0.07">7% (Nuevos Autónomos)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-800/50 border border-slate-800 text-xs text-slate-400 space-y-1">
+              <p>• Deducción del 7% por gastos de difícil justificación aplicada automáticamente (tope legal: 2.000 €).</p>
+              <p>• Mínimo de exención personal general computado (5.550 €).</p>
+            </div>
+          </div>
+
+          <!-- Output KPI Card -->
+          <div class="lg:col-span-6 bg-gradient-to-b from-slate-800/90 to-slate-800/40 border border-slate-700 rounded-xl p-6 sm:p-7 flex flex-col justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-wider text-slate-400 font-bold">Rendimiento Neto Disponible Anual</span>
+              <div class="mt-2 text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-300 font-mono" id="kpi-net-annual">
+                30.740 €
+              </div>
+              <div class="text-xs text-slate-400 mt-1 font-mono" id="kpi-net-monthly">
+                ≈ 2.561 € / mes netos disponibles
+              </div>
+            </div>
+
+            <div class="my-6 border-t border-slate-700/80 pt-5 space-y-3 font-mono text-xs">
+              <div class="flex justify-between text-slate-300">
+                <span>Cuota Seguridad Social (RETA anual):</span>
+                <span id="kpi-reta" class="font-semibold text-rose-300">3.720 €</span>
+              </div>
+              <div class="flex justify-between text-slate-300">
+                <span>IRPF Estimado (Cuota Líquida):</span>
+                <span id="kpi-irpf" class="font-semibold text-amber-300">7.540 €</span>
+              </div>
+              <div class="flex justify-between text-slate-300">
+                <span>Presión Fiscal y Cotizaciones Real:</span>
+                <span id="kpi-burden" class="font-semibold text-brand-300">23,5 %</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-700/60 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-slate-400 block font-medium">Tarifa Horaria Mínima Aconsejada</span>
+                <span class="text-lg font-bold font-mono text-white" id="kpi-hourly">38,50 € / h</span>
+              </div>
+              <a href="#pricing" class="px-4 py-2 text-xs font-bold rounded-lg bg-brand-600 hover:bg-brand-500 text-white transition-all">
+                Obtener Suite Completa →
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-xs font-bold uppercase tracking-wider text-brand-400">Gobernanza y Control Técnico</h2>
+      <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Por qué los autónomos eligen OpsFinance</p>
+      <p class="mt-4 text-slate-400 text-base">
+        A diferencia de plantillas genéricas descargadas de blogs, nuestras herramientas han sido construidas por tituladas de Máster en Project Management conforme a la normativa fiscal española.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-slate-800/40 border border-slate-800 p-8 rounded-2xl hover:border-slate-700 transition-all">
+        <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-400 mb-6 font-mono text-xl">
+          01
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Ingeniería de Tarifas</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Determina con exactitud tu tarifa horaria y diaria facturable. Computa semanas reales de trabajo, vacaciones, bajas estimadas, costes fijos de software y amortización de hardware.
+        </p>
+      </div>
+
+      <div class="bg-slate-800/40 border border-slate-800 p-8 rounded-2xl hover:border-slate-700 transition-all">
+        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-6 font-mono text-xl">
+          02
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Previsión Trimestral 130 y 303</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Simula con antelación el pago fraccionado de IRPF y la liquidación neta de IVA de cada trimestre. Evita sorpresas bancarias o tensiones de liquidez a final de año.
+        </p>
+      </div>
+
+      <div class="bg-slate-800/40 border border-slate-800 p-8 rounded-2xl hover:border-slate-700 transition-all">
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-6 font-mono text-xl">
+          03
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Control de Desviaciones (EVM)</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Incorpora la metodología de Gestión del Valor Ganado para detectar desvíos de presupuesto y horas trabajadas no facturadas (*scope creep*) antes de que erosionen tu margen.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Table -->
+  <section id="pricing" class="py-24 bg-slate-950/80 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-brand-400">Inversión Transparente</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Elige la solución para tu actividad</p>
+        <p class="mt-4 text-slate-400 text-base">Pago único. Sin suscripciones recurrentes. Descarga directa tras la confirmación de pago.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Tier 1 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Nivel Esencial</span>
+            <h3 class="text-2xl font-bold text-white mt-1">Calculadora de Tarifas</h3>
+            <p class="text-slate-400 text-sm mt-3">Para freelancers que necesitan fijar precios competitivos sin equivocarse.</p>
+            <div class="mt-6 flex items-baseline gap-2">
+              <span class="text-4xl font-extrabold text-white font-mono">29 €</span>
+              <span class="text-slate-500 text-sm">pago único</span>
+            </div>
+            <ul class="mt-8 space-y-3 text-sm text-slate-300">
+              <li class="flex items-center gap-3">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Motor de cálculo de tarifa horaria y diaria
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Simulador del tramo RETA según ingresos
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Formatos compatibles con Excel y Google Sheets
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Guía de uso rápido en PDF incluida
+              </li>
+            </ul>
+          </div>
+          <button onclick="openCheckout('Calculadora de Tarifas y Cuota Freelance', 29)" class="mt-8 w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-sm transition-colors border border-slate-700">
+            Comprar Ahora — 29 €
+          </button>
+        </div>
+
+        <!-- Tier 2 (Featured) -->
+        <div class="bg-gradient-to-b from-slate-900 to-slate-900/90 border-2 border-brand-500 rounded-2xl p-8 flex flex-col justify-between relative shadow-2xl shadow-brand-500/10 scale-105">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-brand-500 text-white font-bold text-xs uppercase tracking-wider">
+            Más Popular • Completo
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-400">Suite Operativa</span>
+            <h3 class="text-2xl font-bold text-white mt-1">Suite Completa Freelance</h3>
+            <p class="text-slate-400 text-sm mt-3">El sistema definitivo de gestión financiera y fiscal para autónomos en España.</p>
+            <div class="mt-6 flex items-baseline gap-2">
+              <span class="text-4xl font-extrabold text-white font-mono">59 €</span>
+              <span class="text-slate-500 text-sm">pago único</span>
+            </div>
+            <ul class="mt-8 space-y-3 text-sm text-slate-300">
+              <li class="flex items-center gap-3 font-semibold text-white">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Todo lo incluido en el Nivel Esencial
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Simulador trimestral de Modelos 130 (IRPF) y 303 (IVA)
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Módulo de seguimiento de horas y desvío de costes
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Actualizaciones gratuitas de tramos fiscales por 12 meses
+              </li>
+            </ul>
+          </div>
+          <button onclick="openCheckout('Suite Completa de Gestión Operativa', 59)" class="mt-8 w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-brand-600 to-cyan-600 hover:from-brand-500 hover:to-cyan-500 text-white font-bold text-sm shadow-lg shadow-brand-600/30 transition-transform hover:scale-[1.02]">
+            Comprar Suite Completa — 59 €
+          </button>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Para Estudios y B2B</span>
+            <h3 class="text-2xl font-bold text-white mt-1">Pack B2B + Implantación</h3>
+            <p class="text-slate-400 text-sm mt-3">Para agencias o profesionales que subcontratan talento externo.</p>
+            <div class="mt-6 flex items-baseline gap-2">
+              <span class="text-4xl font-extrabold text-white font-mono">149 €</span>
+              <span class="text-slate-500 text-sm">pago único</span>
+            </div>
+            <ul class="mt-8 space-y-3 text-sm text-slate-300">
+              <li class="flex items-center gap-3 font-semibold text-white">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Licencia multiusuario para pequeños equipos (hasta 5 miembros)
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Revisión asíncrona de 45 minutos (análisis en vídeo de tu modelo de costes)
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Plantilla de acuerdos SLA para colaboradores freelance
+              </li>
+            </ul>
+          </div>
+          <button onclick="openCheckout('Pack B2B + Implantación Asíncrona', 149)" class="mt-8 w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-sm transition-colors border border-slate-700">
+            Comprar Pack B2B — 149 €
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-xs font-bold uppercase tracking-wider text-brand-400">Respuestas Claras</h2>
+      <p class="mt-2 text-3xl font-bold text-white">Preguntas Frecuentes</p>
+    </div>
+
+    <div class="space-y-6">
+      <div class="bg-slate-800/40 border border-slate-800 p-6 rounded-xl">
+        <h4 class="font-bold text-white text-base">¿Qué formato tienen las herramientas y con qué programas son compatibles?</h4>
+        <p class="mt-2 text-slate-400 text-sm leading-relaxed">
+          Recibirás un archivo comprimido (.ZIP) que contiene tanto la versión nativa en formato Microsoft Excel (.xlsx) con celdas de cálculo protegidas, como un enlace directo para generar una copia limpia en tu cuenta de Google Sheets.
+        </p>
+      </div>
+
+      <div class="bg-slate-800/40 border border-slate-800 p-6 rounded-xl">
+        <h4 class="font-bold text-white text-base">¿Necesito conocimientos avanzados de contabilidad para usarlas?</h4>
+        <p class="mt-2 text-slate-400 text-sm leading-relaxed">
+          No. La suite está pensada para ser rellenada únicamente en los campos de entrada señalizados en color azul claro. Todas las fórmulas complejas (tramos del RETA, cálculo progresivo de IRPF y deducción del 7% por gastos de difícil justificación) se ejecutan de manera automática.
+        </p>
+      </div>
+
+      <div class="bg-slate-800/40 border border-slate-800 p-6 rounded-xl">
+        <h4 class="font-bold text-white text-base">¿Qué ocurre si la ley fiscal o las cuotas de la Seguridad Social cambian?</h4>
+        <p class="mt-2 text-slate-400 text-sm leading-relaxed">
+          Las fórmulas se encuentran desacopladas en una pestaña maestra (<span class="font-mono text-xs text-brand-300">Config_Tables</span>). Si el Gobierno aprueba nuevos tramos o reformas en los Presupuestos Generales del Estado, recibirás la versión actualizada por correo electrónico durante los 12 meses posteriores a tu compra.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-slate-800 py-12 text-slate-500 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <p>© 2026 OpsFinance Studio — Dña. Aye Thet Thet Khaing. Todos los derechos reservados.</p>
+        <p class="mt-1 text-slate-600">Herramientas digitales de ingeniería operativa y financiera para el autoempleo en España.</p>
+      </div>
+      <div class="flex items-center space-x-6">
+        <a href="#" class="hover:text-slate-400 transition-colors">Aviso Legal</a>
+        <a href="#" class="hover:text-slate-400 transition-colors">Política de Privacidad</a>
+        <a href="#" class="hover:text-slate-400 transition-colors">Términos de Licencia</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Checkout Simulation Modal -->
+  <div id="checkout-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative">
+      <button onclick="closeCheckout()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-1">
+        ✕
+      </button>
+
+      <div class="mb-6">
+        <span class="text-xs uppercase font-mono text-brand-400 font-bold">Pasarela Segura • SSL 256-bit</span>
+        <h3 class="text-xl font-bold text-white mt-1" id="modal-product-title">Suite Completa de Gestión Operativa</h3>
+        <p class="text-2xl font-extrabold text-white font-mono mt-2" id="modal-product-price">59,00 €</p>
+      </div>
+
+      <form id="checkout-form" onsubmit="handlePayment(event)" class="space-y-4 text-left">
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Correo Electrónico (para recibir la descarga)</label>
+          <input type="email" required placeholder="tu@correo.com" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-brand-500">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Nombre Completo / Razón Social</label>
+          <input type="text" required placeholder="Nombre para la factura" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-brand-500">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Método de Pago</label>
+          <div class="grid grid-cols-3 gap-2">
+            <button type="button" class="py-2 px-3 rounded-lg border border-brand-500 bg-brand-500/10 text-xs font-semibold text-brand-300 flex items-center justify-center gap-1">
+              Tarjeta
+            </button>
+            <button type="button" class="py-2 px-3 rounded-lg border border-slate-700 bg-slate-800 text-xs font-semibold text-slate-400 flex items-center justify-center gap-1">
+              Bizum
+            </button>
+            <button type="button" class="py-2 px-3 rounded-lg border border-slate-700 bg-slate-800 text-xs font-semibold text-slate-400 flex items-center justify-center gap-1">
+              PayPal
+            </button>
+          </div>
+        </div>
+
+        <div class="pt-2 text-[11px] text-slate-400 leading-snug">
+          Al completar la compra aceptas la entrega inmediata de contenido digital y reconoces la renuncia a tu derecho legal de desistimiento conforme a la normativa de la UE.
+        </div>
+
+        <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-brand-600 to-cyan-600 hover:from-brand-500 hover:to-cyan-500 text-white font-bold text-sm shadow-lg shadow-brand-600/30 transition-all mt-4">
+          Confirmar y Descargar Archivos
+        </button>
+      </form>
+
+      <!-- Success Screen -->
+      <div id="checkout-success" class="hidden text-center py-6">
+        <div class="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto text-2xl font-bold mb-4">
+          ✓
+        </div>
+        <h4 class="text-xl font-bold text-white">¡Pago Confirmado con Éxito!</h4>
+        <p class="text-slate-400 text-xs mt-2">
+          Hemos enviado la factura con NIF y el enlace de descarga a tu correo electrónico.
+        </p>
+        <div class="mt-6 p-4 rounded-xl bg-slate-800 border border-slate-700 text-left space-y-2 text-xs">
+          <p class="font-semibold text-white">Acceso a tus entregables:</p>
+          <a href="#" class="block text-brand-400 hover:underline">📥 Descargar OpsFinance_Suite_v1.0.zip</a>
+          <a href="#" class="block text-cyan-400 hover:underline">📄 Abrir Guía Rápida de Configuración (PDF)</a>
+        </div>
+        <button onclick="closeCheckout()" class="mt-6 px-6 py-2 rounded-lg bg-slate-800 text-xs font-semibold text-slate-300 hover:bg-slate-700">
+          Cerrar Ventana
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Interactive Demo Calculation Script -->
+  <script>
+    const billingInput = document.getElementById('input-billing');
+    const expensesInput = document.getElementById('input-expenses');
+    const regimeSelect = document.getElementById('select-regime');
+    const retentionSelect = document.getElementById('select-retention');
+
+    const displayBilling = document.getElementById('display-billing');
+    const displayExpenses = document.getElementById('display-expenses');
+
+    const kpiNetAnnual = document.getElementById('kpi-net-annual');
+    const kpiNetMonthly = document.getElementById('kpi-net-monthly');
+    const kpiReta = document.getElementById('kpi-reta');
+    const kpiIrpf = document.getElementById('kpi-irpf');
+    const kpiBurden = document.getElementById('kpi-burden');
+    const kpiHourly = document.getElementById('kpi-hourly');
+
+    function calculate() {
+      const billing = parseFloat(billingInput.value);
+      const expenses = parseFloat(expensesInput.value);
+      const regime = regimeSelect.value;
+      const retentionRate = parseFloat(retentionSelect.value);
+
+      displayBilling.textContent = billing.toLocaleString('es-ES') + ' €';
+      displayExpenses.textContent = expenses.toLocaleString('es-ES') + ' €';
+
+      const accountingProfit = Math.max(0, billing - expenses);
+      const dificilJustif = Math.min(2000, accountingProfit * 0.07);
+      const netYieldPrevio = Math.max(0, accountingProfit - dificilJustif);
+      const monthlyBenchmark = netYieldPrevio / 12;
+
+      // Calculate RETA
+      let annualReta = 0;
+      if (regime === 'tarifa_plana') {
+        annualReta = 88.56 * 12;
+      } else {
+        if (monthlyBenchmark <= 1166) annualReta = 230 * 12;
+        else if (monthlyBenchmark <= 1700) annualReta = 294 * 12;
+        else if (monthlyBenchmark <= 2330) annualReta = 330 * 12;
+        else if (monthlyBenchmark <= 3190) annualReta = 390 * 12;
+        else annualReta = 480 * 12;
+      }
+
+      // Calculate IRPF
+      const taxableBase = Math.max(0, billing - expenses - annualReta - dificilJustif);
+      let grossTax = 0;
+      if (taxableBase <= 12450) {
+        grossTax = taxableBase * 0.19;
+      } else if (taxableBase <= 20200) {
+        grossTax = 2365.50 + (taxableBase - 12450) * 0.24;
+      } else if (taxableBase <= 35200) {
+        grossTax = 4225.50 + (taxableBase - 20200) * 0.30;
+      } else if (taxableBase <= 60000) {
+        grossTax = 8725.50 + (taxableBase - 35200) * 0.37;
+      } else {
+        grossTax = 17901.50 + (taxableBase - 60000) * 0.45;
+      }
+
+      const personalExemptionCredit = 5550 * 0.19;
+      const netIrpf = Math.max(0, grossTax - personalExemptionCredit);
+
+      const netTakeHome = Math.max(0, billing - expenses - annualReta - netIrpf);
+      const netMonthly = netTakeHome / 12;
+      const totalBurdenPct = ((annualReta + netIrpf) / billing) * 100;
+
+      // Recommended rate (assuming 46 weeks * 25 billable hours = 1150h)
+      const hourlyRate = (billing / 1150);
+
+      kpiNetAnnual.textContent = Math.round(netTakeHome).toLocaleString('es-ES') + ' €';
+      kpiNetMonthly.textContent = '≈ ' + Math.round(netMonthly).toLocaleString('es-ES') + ' € / mes netos disponibles';
+      kpiReta.textContent = Math.round(annualReta).toLocaleString('es-ES') + ' €';
+      kpiIrpf.textContent = Math.round(netIrpf).toLocaleString('es-ES') + ' €';
+      kpiBurden.textContent = totalBurdenPct.toFixed(1) + ' %';
+      kpiHourly.textContent = hourlyRate.toFixed(2).replace('.', ',') + ' € / h';
+    }
+
+    billingInput.addEventListener('input', calculate);
+    expensesInput.addEventListener('input', calculate);
+    regimeSelect.addEventListener('change', calculate);
+    retentionSelect.addEventListener('change', calculate);
+    calculate();
+
+    // Modal Handlers
+    const modal = document.getElementById('checkout-modal');
+    const modalTitle = document.getElementById('modal-product-title');
+    const modalPrice = document.getElementById('modal-product-price');
+    const checkoutForm = document.getElementById('checkout-form');
+    const checkoutSuccess = document.getElementById('checkout-success');
+
+    function openCheckout(title, price) {
+      modalTitle.textContent = title;
+      modalPrice.textContent = price.toFixed(2).replace('.', ',') + ' €';
+      checkoutForm.classList.remove('hidden');
+      checkoutSuccess.classList.add('hidden');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeCheckout() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function handlePayment(e) {
+      e.preventDefault();
+      checkoutForm.classList.add('hidden');
+      checkoutSuccess.classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
