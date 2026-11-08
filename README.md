@@ -1,38 +1,42 @@
 # OpsFinance Studio
 
-Sitio de presentación y venta de plantillas digitales para profesionales autónomos. La estructura está preparada para vender archivos compatibles con Excel y Google Sheets.
+Plantillas funcionales para pequeños negocios y profesionales independientes. La colección está pensada para trabajarse en Excel y importarse a Google Sheets con pocas complicaciones.
 
-## Qué hay ahora
+## Archivos descargables
 
-- 3 muestras gratis de plantillas digitales en formato CSV.
-- Página de producto orientada a venta digital.
-- Diseño de tienda simple y claro para presentar las plantillas.
+- `assets/planificador-flujo-caja.csv` — flujo de caja mensual
+- `assets/registro-ingresos-gastos.csv` — registro de ingresos y gastos
+- `assets/control-horas-proyectos.csv` — control de horas y proyectos
+- `assets/google-sheets-guide.md` — guía rápida para importar archivos CSV a Google Sheets
 
-## Archivos de muestra
+## Cómo usar estas plantillas
 
-- `assets/planificador-flujo-caja.csv`
-- `assets/registro-ingresos-gastos.csv`
-- `assets/control-horas-proyectos.csv`
+1. Descarga el archivo CSV.
+2. Abre el archivo en Excel para revisar columnas y formato.
+3. En Google Sheets, ve a `Archivo > Importar` y selecciona el CSV.
+4. Ajusta títulos, categorías o columnas a tu negocio.
+5. Guarda una copia nueva antes de empezar a usarla con datos reales.
 
-Estos archivos se abren en Excel y se pueden importar a Google Sheets.
+## Modelo de negocio digital
 
-## Qué falta para vender de verdad
+Este proyecto funciona como una tienda de plantillas digitales porque:
 
-1. Finalizar la versión premium de cada plantilla.
-2. Subir los archivos finales en formato Excel/Sheets o un enlace seguro de entrega.
-3. Integrar una plataforma de checkout (ej. Lemon Squeezy, Payhip o Gumroad).
-4. Confirmar el flujo de entrega automático tras el pago.
-5. Revisar condiciones legales y fiscales para España/UE.
+- no requiere stock físico,
+- se entrega de forma digital,
+- se puede vender varias veces sin costes de producción,
+- tiene un alto valor para profesionales que ya usan Excel o Google Sheets,
+- se puede escalar con bundles, guías y versiones premium.
 
-## Recomendación
+## Recomendación para el lanzamiento
 
-Para empezar de forma sencilla, el camino más práctico es:
+Para arrancar de forma segura:
 
-- dejar esta página como landing/storefront,
-- crear los productos en Lemon Squeezy o Payhip,
-- enlazar cada botón de compra a la plataforma de venta,
-- usar la página de GitHub como presencia pública y demostración del proyecto.
+- usa una plataforma de checkout como Lemon Squeezy, Payhip o Gumroad,
+- coloca los productos finales allí,
+- mantiene esta página como landing page pública,
+- entrega los archivos después del pago,
+- revisa condiciones legales y fiscales para España/UE.
 
-## Desarrollo local
+## Nota importante
 
-Abre `index.html` en un navegador. No se requiere compilación.
+Estas plantillas son herramientas de organización y no sustituyen el asesoramiento contable, fiscal o legal. Están pensadas para apoyar la gestión diaria, no para emitir juicios legales ni fiscales.

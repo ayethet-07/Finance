@@ -1,52 +1,18 @@
 Fecha;Tipo (Ingreso/Gasto);Categoría;Cliente o proveedor;Descripción;Importe (€);Método de pago;Estado;Notas
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
+2026-01-05;Ingreso;Trabajo;Cliente A;Proyecto web;1200;Transferencia;Cobrado;Primera entrega
+2026-01-08;Gasto;Software;Proveedor X;Adobe;45;Tajerta;Pagado;Suscripción mensual
+2026-01-12;Ingreso;Consultoría;Cliente B;Auditoría;800;Bizum;Cobrado;Factura emitida
+2026-01-18;Gasto;Internet;Proveedor Y;Fibra;28;Transferencia;Pagado;Servicios del hogar
+2026-01-25;Ingreso;Proyecto;Cliente C;Campaña de redes;1600;Transferencia;Pendiente;Pago previsto
+2026-02-03;Gasto;Marketing;Proveedor Z;Ads;180;Tarjeta;Pagado;Campaña digital
+2026-02-10;Ingreso;Trabajo;Cliente D;Diseño gráfico;950;Bizum;Cobrado;Segundo sprint
+2026-02-14;Gasto;Alquiler;Proveedor A;Escritorio compartido;120;Transferencia;Pagado;Alquiler mensual
+2026-02-20;Ingreso;Consultoría;Cliente E;Asesoría;700;Transferencia;Pendiente;Por confirmar
+2026-03-05;Gasto;Material;Proveedor M;Papelería;35;Tarjeta;Pagado;Necesario
+2026-03-06;Ingreso;Proyecto;Cliente F;Landing page;1400;Transferencia;Cobrado;Proyecto finalizado
+2026-03-16;Gasto;Movilidad;Proveedor R;Gasolina;52;Tarjeta;Pagado;Ruta de cliente
+2026-03-22;Ingreso;Servicio;Cliente G;Asistencia;900;Bizum;Cobrado;Revisión semanal
+2026-04-02;Gasto;Software;Proveedor X;Notion;18;Tarjeta;Pagado;Plan personal
+2026-04-08;Ingreso;Trabajo;Cliente H;Newsletter;1100;Transferencia;Cobrado;Módulo B
+2026-04-18;Gasto;Marketing;Proveedor Z;Copywriting;200;Transferencia;Pagado;Contenido
+2026-04-29;Ingreso;Consultoría;Cliente I;Planificación;1300;Transferencia;Pendiente;Pago aplazado

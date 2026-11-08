@@ -1,52 +1,11 @@
 Fecha;Cliente;Proyecto;Tarea;Horas previstas;Horas reales;Tarifa por hora (€);Importe estimado (€);Facturado (Sí/No);Notas
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
-;;;;;;;;;;
+2026-01-05;Cliente A;Proyecto Web;Diseño UI;4;3.5;35;122.5;Sí;Se entregó primera versión
+2026-01-07;Cliente B;Audit SEO;Análisis inicial;2;2.5;40;100;Sí;Necesita seguimiento
+2026-01-12;Cliente C;Campaña redes;Estrategia;5;5;45;225;No;Pendiente de aprobación
+2026-01-20;Cliente D;Diseño gráfico;Banners;3;4;32;128;Sí;Material listo
+2026-02-02;Cliente A;Proyecto Web;Desarrollo front;8;7.5;35;262.5;Sí;Sin incidencias
+2026-02-15;Cliente E;Asesoría;Revisión financiera;2;2;50;100;No;Enviar presupuesto
+2026-02-20;Cliente F;Landing page;Contenido y estructura;6;6.5;42;273;Sí;Listo para publicar
+2026-03-02;Cliente G;Asistencia;Reunión semanal;1;1.5;36;54;Sí;Apuntes enviados
+2026-03-10;Cliente H;Newsletter;Configuración;4;4.5;38;171;No;Pendiente de confirmar
+2026-03-21;Cliente I;Planificación;Consulta y propuesta;3;2.5;45;112.5;Sí;Confirmado por correo
