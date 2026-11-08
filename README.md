@@ -1,25 +1,38 @@
 # OpsFinance Studio
 
-Sitio estático en español para presentar y distribuir muestras de hojas de cálculo de planificación operativa.
+Sitio de presentación y venta de plantillas digitales para profesionales autónomos. La estructura está preparada para vender archivos compatibles con Excel y Google Sheets.
 
-## Sitio publicado
+## Qué hay ahora
 
-- URL: https://ayethet-07.github.io/Finance/
-- GitHub Pages: rama `main`, carpeta `/(root)` en [Settings → Pages](https://github.com/ayethet-07/Finance/settings/pages).
-- Entrada: `index.html` en la raíz.
+- 3 muestras gratis de plantillas digitales en formato CSV.
+- Página de producto orientada a venta digital.
+- Diseño de tienda simple y claro para presentar las plantillas.
 
-## Muestras descargables
+## Archivos de muestra
 
-La carpeta `assets/` contiene plantillas CSV de flujo de caja, registro de ingresos/gastos y control de horas/proyectos. CSV se abre en Excel y se importa a Google Sheets. Son muestras gratuitas, no productos premium ni asesoramiento financiero/fiscal.
+- `assets/planificador-flujo-caja.csv`
+- `assets/registro-ingresos-gastos.csv`
+- `assets/control-horas-proyectos.csv`
 
-Para preparar una plantilla de Google Sheets para vender: importa y revisa el CSV en Sheets, conviértelo en una plantilla de calidad, configura compartir como solo lectura y genera un enlace de copia. Prueba el flujo con una cuenta distinta antes de distribuirlo. Los archivos de muestra de este repositorio son públicos.
+Estos archivos se abren en Excel y se pueden importar a Google Sheets.
 
-## Activar ventas
+## Qué falta para vender de verdad
 
-El sitio no procesa pagos actualmente. Para vender descargas de forma segura, primero crea una cuenta de vendedor y productos en una plataforma de checkout digital (por ejemplo, Lemon Squeezy, que se recomendó como opción para empezar), verifica disponibilidad, precios, tarifas, pagos y condiciones fiscales para tu caso, y carga allí los archivos finales. Después añade enlaces públicos de checkout a las tarjetas de producto; no insertes claves secretas ni recojas datos de tarjetas en este sitio estático.
+1. Finalizar la versión premium de cada plantilla.
+2. Subir los archivos finales en formato Excel/Sheets o un enlace seguro de entrega.
+3. Integrar una plataforma de checkout (ej. Lemon Squeezy, Payhip o Gumroad).
+4. Confirmar el flujo de entrega automático tras el pago.
+5. Revisar condiciones legales y fiscales para España/UE.
 
-Antes de abrir ventas, confirma que cada producto está completo y probado y publica la información comercial y legal requerida para tu situación (identidad y contacto del vendedor, precio/impuestos, entrega, condiciones, privacidad y reglas aplicables a contenido digital). Consulta a un asesor para obligaciones de España/UE; una plataforma de checkout no sustituye tus obligaciones fiscales sobre los ingresos del negocio.
+## Recomendación
 
-## Desarrollo
+Para empezar de forma sencilla, el camino más práctico es:
 
-Abre `index.html` en un navegador o usa cualquier servidor estático. No se requiere compilación. Los valores del planificador se procesan solo en el navegador.
+- dejar esta página como landing/storefront,
+- crear los productos en Lemon Squeezy o Payhip,
+- enlazar cada botón de compra a la plataforma de venta,
+- usar la página de GitHub como presencia pública y demostración del proyecto.
+
+## Desarrollo local
+
+Abre `index.html` en un navegador. No se requiere compilación.
