@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plantillas Excel y Google Sheets para autónomos | OpsFinance Studio</title>
+<meta name="description" content="Plantillas de flujo de caja, ingresos y gastos, y control de horas para autónomos y pequeñas empresas. Compatibles con Excel y Google Sheets. Pago único y descarga inmediata.">
+<meta name="theme-color" content="#f4f6f1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Plantillas Excel y Google Sheets para autónomos | OpsFinance Studio">
+<meta property="og:description" content="Flujo de caja, ingresos y gastos, y control de horas. Pago único, descarga inmediata.">
+<meta property="og:locale" content="es_ES">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📊%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","itemListElement":[
+{"@type":"Product","name":"Flujo de caja mensual","description":"Plantilla de Excel y Google Sheets para planificar ingresos, gastos y reserva durante 12 meses.","offers":{"@type":"Offer","price":"19","priceCurrency":"EUR"}},
+{"@type":"Product","name":"Registro de ingresos y gastos","description":"Plantilla de Excel y Google Sheets para registrar movimientos por categoría, cliente, proveedor y estado de pago.","offers":{"@type":"Offer","price":"19","priceCurrency":"EUR"}},
+{"@type":"Product","name":"Control de horas y proyectos","description":"Plantilla de Excel y Google Sheets para controlar horas, tarifas y facturación por proyecto.","offers":{"@type":"Offer","price":"29","priceCurrency":"EUR"}},
+{"@type":"Product","name":"Pack de 3 plantillas","description":"Flujo de caja, ingresos y gastos, y control de horas en un solo pack.","offers":{"@type":"Offer","price":"39","priceCurrency":"EUR"}}]}
+</script>
+<!--
+ANTES DE PUBLICAR, reemplaza estos marcadores:
+  REEMPLAZAR_URL_PACK, REEMPLAZAR_URL_FLUJO, REEMPLAZAR_URL_INGRESOS, REEMPLAZAR_URL_HORAS  -> enlaces de checkout
+  contacto@TU-DOMINIO.com -> tu email real
+  [Tu nombre] -> tu nombre o marca
+  aviso-legal.html y privacidad.html -> crea estas páginas
+-->
+<style>
+:root{--paper:#f4f6f1;--ink:#16213a;--muted:#4f5d77;--line:#cdd7c8;--green:#1e6b57;--green-d:#154f40;--hi:#fff3bf;--card:#fff;--serif:Charter,"Iowan Old Style","Palatino Linotype",Georgia,serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 var(--sans);-webkit-text-size-adjust:100%}
+body{background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:48px 48px;background-position:-1px -1px}
+body::before{content:"";position:fixed;inset:0;background:var(--paper);opacity:.9;z-index:-1}
+a{color:var(--green-d)}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;flex-wrap:wrap}
+.brand{font:700 1.15rem var(--serif);text-decoration:none;color:var(--ink)}
+nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a:hover{color:var(--ink);text-decoration:underline}
+h1,h2,h3{font-family:var(--serif);line-height:1.15;margin:0}
+h1{font-size:clamp(2rem,5vw,3.2rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.55rem,3.2vw,2.1rem);margin-bottom:10px}
+h3{font-size:1.25rem}
+section{padding:64px 0}
+.lead{font-size:1.12rem;color:var(--muted);max-width:56ch}
+.btn{display:inline-block;padding:12px 20px;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--green);background:var(--green);color:#fff;font-size:1rem}
+.btn:hover{background:var(--green-d);border-color:var(--green-d)}
+.btn.alt{background:transparent;color:var(--green-d)}
+.btn.alt:hover{background:#e3ece6}
+.hero{padding:56px 0 40px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
+.hero p.note{font-size:.95rem;color:var(--muted);margin:18px 0 0}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.sheet{background:var(--card);border:1px solid var(--ink);border-radius:4px;box-shadow:6px 6px 0 var(--ink);overflow:hidden}
+.sheet table{width:100%;border-collapse:collapse;font-size:.88rem;font-variant-numeric:tabular-nums}
+.sheet th,.sheet td{border:1px solid var(--line);padding:7px 10px;text-align:right;white-space:nowrap}
+.sheet thead th{background:#e9eee5;color:var(--muted);font-weight:500;text-align:center}
+.sheet tbody th{background:#e9eee5;color:var(--muted);font-weight:500;width:34px;text-align:center}
+.sheet tr.h td{background:var(--green);color:#fff;font-weight:600}
+.sheet td:nth-child(2){text-align:left}
+.sheet td.hi{background:var(--hi);font-weight:700}
+.sheet caption{caption-side:bottom;padding:8px 12px;font-size:.8rem;color:var(--muted);text-align:left;background:#fff}
+.sheet-wrap{overflow-x:auto}
+.bundle{background:var(--ink);color:#fff;border-radius:8px;padding:28px;display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:center;margin:28px 0 20px}
+.bundle h3{font-size:1.5rem}
+.bundle p{margin:8px 0 0;color:#d5dbe8}
+.bundle ul{margin:12px 0 0;padding-left:20px;color:#fff}
+.price-big{font:700 2.6rem var(--serif)}
+.price-big s{font-size:1.2rem;color:#aab4c8;font-weight:400;margin-left:8px}
+.save{display:inline-block;background:var(--hi);color:var(--ink);font-weight:700;font-size:.85rem;padding:3px 10px;border-radius:99px;margin:4px 0 14px}
+.bundle .btn{background:#fff;color:var(--ink);border-color:#fff}
+.bundle .btn:hover{background:var(--hi);border-color:var(--hi)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--ink);border-radius:6px;padding:22px;display:flex;flex-direction:column}
+.card p{margin:8px 0 0;color:var(--muted);font-size:.97rem}
+.card ul{padding-left:20px;margin:14px 0 18px;font-size:.95rem}
+.card .price{font:700 1.7rem var(--serif);margin-top:auto}
+.card .price small{font:400 .85rem var(--sans);color:var(--muted)}
+.card .btns{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.card .btn{text-align:center;padding:10px 14px}
+.sample-note{margin-top:18px;font-size:.93rem;color:var(--muted);max-width:70ch}
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:20px}
+ol.steps li::before{content:counter(s);display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--green);color:#fff;font-weight:700;margin-bottom:10px}
+ol.steps strong{display:block;font-family:var(--serif);font-size:1.1rem}
+ol.steps span{color:var(--muted);font-size:.95rem}
+.faq{max-width:780px;margin-top:22px}
+details{background:var(--card);border:1px solid var(--line);border-radius:6px;margin-bottom:10px}
+summary{cursor:pointer;padding:15px 18px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.3rem;line-height:1;color:var(--green)}
+details[open] summary::after{content:"−"}
+details p{margin:0;padding:0 18px 16px;color:var(--muted)}
+.policy{background:var(--card);border:1px solid var(--ink);border-radius:6px;padding:28px;max-width:780px;margin-top:20px}
+.policy h3{margin:20px 0 6px;font-size:1.1rem}
+.policy h3:first-child{margin-top:0}
+.policy p{margin:0 0 8px;color:var(--muted)}
+.contact{border-top:1px solid var(--line)}
+footer{background:var(--ink);color:#c9d1e2;padding:28px 0;font-size:.9rem}
+footer a{color:#fff;margin-right:16px}
+footer p{margin:8px 0 0}
+@media(max-width:860px){
+.hero .wrap,.bundle{grid-template-columns:1fr}
+.grid3,ol.steps{grid-template-columns:1fr}
+nav a{margin:0 14px 0 0}
+section{padding:48px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+<div class="wrap">
+<a class="brand" href="#top">OpsFinance Studio</a>
+<nav aria-label="Principal">
+<a href="#plantillas">Plantillas</a>
+<a href="#como-funciona">Cómo funciona</a>
+<a href="#preguntas">Preguntas</a>
+<a href="#reembolsos">Reembolsos</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+<div class="wrap">
+<div>
+<h1>Plantillas de Excel y Google Sheets para llevar las cuentas de tu negocio al día</h1>
+<p class="lead">Flujo de caja, ingresos y gastos, y control de horas para autónomos y pequeñas empresas. Las abres, rellenas tus datos y ves cuánto tienes, cuánto has gastado y qué te deben.</p>
+<div class="cta">
+<a class="btn" href="#plantillas">Ver el pack de 3 plantillas</a>
+<a class="btn alt" href="assets/planificador-flujo-caja.csv" download>Descargar muestra gratis</a>
+</div>
+<p class="note">Pago único, descarga inmediata y sin suscripciones.</p>
+</div>
+
+<div class="sheet-wrap">
+<div class="sheet">
+<table>
+<caption>Ejemplo ilustrativo de la plantilla de flujo de caja (saldo inicial: 2.000 €).</caption>
+<thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr></thead>
+<tbody>
+<tr class="h"><th>1</th><td>Mes</td><td>Ingresos</td><td>Gastos</td><td>Reserva</td><td>Saldo final</td></tr>
+<tr><th>2</th><td>Enero</td><td>3.200 €</td><td>1.850 €</td><td>300 €</td><td class="hi">3.050 €</td></tr>
+<tr><th>3</th><td>Febrero</td><td>2.900 €</td><td>1.920 €</td><td>300 €</td><td class="hi">3.730 €</td></tr>
+<tr><th>4</th><td>Marzo</td><td>3.600 €</td><td>2.100 €</td><td>300 €</td><td class="hi">4.930 €</td></tr>
+<tr><th>5</th><td>Abril</td><td>3.100 €</td><td>1.980 €</td><td>300 €</td><td class="hi">5.750 €</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<section id="plantillas">
+<div class="wrap">
+<h2>Tres plantillas, una para cada pregunta de tu negocio</h2>
+<p class="lead">Cada plantilla funciona por separado. Si las quieres todas, el pack sale más barato.</p>
+
+<div class="bundle">
+<div>
+<h3>Pack de 3 plantillas</h3>
+<p>Flujo de caja, ingresos y gastos, y control de horas y proyectos.</p>
+<ul>
+<li>Funcionan en Excel y en Google Sheets</li>
+<li>Descarga inmediata tras el pago</li>
+<li>Garantía de reembolso de 14 días</li>
+</ul>
+</div>
+<div>
+<div class="price-big">39 € <s>67 €</s></div>
+<span class="save">Ahorras 28 €</span><br>
+<a class="btn" href="REEMPLAZAR_URL_PACK">Comprar el pack</a>
+</div>
+</div>
+
+<div class="grid3">
+<article class="card">
+<h3>Flujo de caja mensual</h3>
+<p>Planifica ingresos, gastos y reserva, y consulta cuánto dinero tendrás disponible cada mes.</p>
+<ul>
+<li>12 meses en una sola hoja</li>
+<li>Saldo inicial y final</li>
+<li>Reserva mensual</li>
+</ul>
+<div class="price">19 € <small>pago único</small></div>
+<div class="btns">
+<a class="btn" href="REEMPLAZAR_URL_FLUJO">Comprar</a>
+<a class="btn alt" href="assets/planificador-flujo-caja.csv" download>Muestra gratuita</a>
+</div>
+</article>
+
+<article class="card">
+<h3>Registro de ingresos y gastos</h3>
+<p>Anota cada movimiento y sabe qué has cobrado, qué te deben y en qué gastas.</p>
+<ul>
+<li>Categoría, cliente y proveedor</li>
+<li>Estado de pago y método de cobro</li>
+<li>Filtros por tipo de movimiento</li>
+</ul>
+<div class="price">19 € <small>pago único</small></div>
+<div class="btns">
+<a class="btn" href="REEMPLAZAR_URL_INGRESOS">Comprar</a>
+<a class="btn alt" href="assets/registro-ingresos-gastos.csv" download>Muestra gratuita</a>
+</div>
+</article>
+
+<article class="card">
+<h3>Control de horas y proyectos</h3>
+<p>Para freelancers, consultores y pequeñas agencias que cobran por tiempo o por proyecto.</p>
+<ul>
+<li>Proyectos y tareas</li>
+<li>Horas previstas y reales</li>
+<li>Tarifa por hora y estado de facturación</li>
+</ul>
+<div class="price">29 € <small>pago único</small></div>
+<div class="btns">
+<a class="btn" href="REEMPLAZAR_URL_HORAS">Comprar</a>
+<a class="btn alt" href="assets/control-horas-proyectos.csv" download>Muestra gratuita</a>
+</div>
+</article>
+</div>
+
+<p class="sample-note">Las muestras gratuitas son archivos CSV con datos de ejemplo para ver la estructura. Las plantillas completas incluyen el formato y las funciones de cálculo que un CSV no puede contener.</p>
+</div>
+</section>
+
+<section id="como-funciona" style="background:rgba(255,255,255,.55)">
+<div class="wrap">
+<h2>Cómo funciona</h2>
+<ol class="steps">
+<li><strong>Compra</strong><span>Pagas una vez con tarjeta u otro método disponible en la plataforma de pago segura.</span></li>
+<li><strong>Descarga</strong><span>Recibes el enlace de descarga al instante, en pantalla y por email.</span></li>
+<li><strong>Empieza a usarla</strong><span>Ábrela en Excel o súbela a Google Sheets, y sustituye los datos de ejemplo por los tuyos.</span></li>
+</ol>
+<p class="sample-note">¿Usas Google Sheets? Consulta la <a href="assets/google-sheets-guide.md">guía para importar las plantillas</a>.</p>
+</div>
+</section>
+
+<section id="preguntas">
+<div class="wrap">
+<h2>Preguntas frecuentes</h2>
+<div class="faq">
+<details><summary>¿Qué programa necesito?</summary><p>Microsoft Excel o una cuenta gratuita de Google para usar Google Sheets. También funcionan en otras hojas de cálculo compatibles con archivos de Excel, aunque algunas funciones pueden variar.</p></details>
+<details><summary>¿Cómo uso las plantillas en Google Sheets?</summary><p>Sube el archivo a Google Drive y ábrelo con Hojas de cálculo de Google, o impórtalo desde Archivo &gt; Importar. Tienes una guía paso a paso enlazada en la sección "Cómo funciona".</p></details>
+<details><summary>¿Cómo recibo mis archivos tras pagar?</summary><p>Al terminar el pago verás el enlace de descarga en pantalla y recibirás un email con el mismo enlace. Si no te llega, revisa la carpeta de spam o escríbenos.</p></details>
+<details><summary>¿Cuál es la diferencia entre la muestra gratuita y la plantilla completa?</summary><p>La muestra es un CSV con datos de ejemplo, útil para ver la estructura. La plantilla completa es un archivo de hoja de cálculo con formato y fórmulas listos para usar.</p></details>
+<details><summary>¿Puedo modificar las plantillas?</summary><p>Sí. Puedes adaptarlas a tu negocio: cambiar categorías, añadir columnas o ajustar los textos. No está permitido revender ni redistribuir los archivos, ni su versión modificada.</p></details>
+<details><summary>¿Recibiré actualizaciones?</summary><p>Si publicamos una versión mejorada de una plantilla que has comprado, te la enviamos sin coste adicional.</p></details>
+<details><summary>¿Sustituyen a un asesor o gestor?</summary><p>No. Son herramientas de organización y no constituyen asesoramiento fiscal, contable ni legal. Para decisiones fiscales, consulta con un profesional.</p></details>
+<details><summary>¿Qué pasa si no me convence?</summary><p>Tienes 14 días para pedir el reembolso. Los detalles están en la sección de reembolsos más abajo.</p></details>
+</div>
+</div>
+</section>
+
+<section id="reembolsos" style="background:rgba(255,255,255,.55)">
+<div class="wrap">
+<h2>Política de reembolso</h2>
+<p class="lead">Si la plantilla no te sirve, no pierdes tu dinero.</p>
+<div class="policy">
+<h3>Garantía de 14 días</h3>
+<p>Si en los 14 días siguientes a tu compra la plantilla no funciona como se describe en esta página y no logramos resolverlo, te devolvemos el importe íntegro.</p>
+<h3>Cómo pedirlo</h3>
+<p>Escribe a <a href="mailto:contacto@TU-DOMINIO.com">contacto@TU-DOMINIO.com</a> indicando el email de compra y el número de pedido. Si puedes, cuéntanos qué ha fallado para que podamos mejorar la plantilla.</p>
+<h3>Plazo y forma de pago</h3>
+<p>El reembolso se hace con el mismo método de pago que usaste. Lo solicitamos a la plataforma de pago en cuanto aprobamos tu petición, y el banco puede tardar unos días en reflejarlo.</p>
+<h3>Productos digitales y derecho de desistimiento</h3>
+<p>Al comprar contenido digital con descarga inmediata, aceptas que comience la entrega antes de que termine el plazo legal de desistimiento de 14 días y reconoces que, por ello, puedes perder ese derecho. Esta garantía es voluntaria y adicional: no afecta a tus derechos como consumidor.</p>
+<h3>Qué no cubre</h3>
+<p>No hacemos reembolsos por cambio de opinión una vez superado el plazo de 14 días, ni por un uso que incumpla las condiciones de licencia (reventa o redistribución).</p>
+</div>
+</div>
+</section>
+
+<section class="contact">
+<div class="wrap">
+<h2>Quién está detrás</h2>
+<p class="lead">OpsFinance Studio es un proyecto de [Tu nombre]. Creo plantillas pensadas para que autónomos y pequeños negocios tengan sus cuentas claras sin necesidad de software complicado.</p>
+<p>¿Dudas antes de comprar? Escribe a <a href="mailto:contacto@TU-DOMINIO.com">contacto@TU-DOMINIO.com</a>.</p>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+<a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Política de privacidad</a><a href="#reembolsos">Reembolsos</a>
+<p>© 2026 OpsFinance Studio. Los pagos se procesan a través de una plataforma de pago segura.</p>
+</div>
+</footer>
+
+</body>
+</html>
